@@ -1,0 +1,39 @@
+Po pierwszym uruchomieniu aplikacji:
+OnCreate(): Jest to pierwsza metoda wywoływana po utworzeniu aktywności. Tworzy widok aktywności i inicjalizuje wszystkie komponenty, jak przyciski, teksty itp.
+OnStart(): Ta metoda jest wywoływana, gdy aktywność staje się widoczna, ale jeszcze nie jest interaktywna.
+OnResume(): Aktywność staje się widoczna i interaktywna, więc użytkownik może zacząć z nią wchodzić w interakcje. Jest to stan, w którym aktywność jest aktywnie używana.
+
+Po wciśnięciu przycisku Cofnij:
+OnPause(): Zostaje wywołana, gdy aktywność przestaje być interaktywna, ale jeszcze nie jest całkowicie zamknięta. Aktywność jest „zatrzymana”, ale jej stan może zostać zachowany.
+OnStop(): Aktywność staje się całkowicie niewidoczna. Może to oznaczać, że użytkownik przeszedł do innej aktywności lub aplikacja została całkowicie zamknięta.
+
+Po ponownym uruchomieniu aplikacji:
+OnStart(): Aktywność staje się znów widoczna. Może to oznaczać, że użytkownik powrócił do aplikacji po jej minimalizacji.
+OnResume(): Aktywność staje się aktywna i gotowa do interakcji z użytkownikiem
+
+Po wciśnięciu przycisku ekranu głównego Home:
+OnPause(): Aktywność jest przerywana, ale nie jest całkowicie zamknięta. Użytkownik przeszedł na inny ekran, ale aplikacja może działać w tle.
+OnStop(): Aktywność staje się niewidoczna, ponieważ została zminimalizowana, a użytkownik nie ma już bezpośredniego dostępu do aplikacji.
+
+Po powrocie do aplikacji z listy ostatnio używanych aplikacji:
+OnStart(): Po ponownym otwarciu aplikacji z listy ostatnio używanych, system przywraca ją do widocznego stanu.
+OnResume(): Aktywność staje się aktywna i gotowa do interakcji z użytkownikiem
+
+Po obrocie urządzenia:
+OnPause(): Aktywność jest wstrzymywana w celu przetworzenia zmiany orientacji.
+OnStop(): Aktywność staje się niewidoczna, ponieważ system tworzy nową instancję aktywności z nowymi ustawieniami orientacji.
+OnDestroy(): Aktywność jest niszczona, ponieważ system tworzy nową instancję z nowym układem dla nowej orientacji ekranu.
+OnCreate(): Nowa instancja aktywności jest tworzona, aby dostosować się do zmiany orientacji.
+OnStart(): Nowa instancja aktywności jest uruchamiana, aby stała się widoczna.
+OnResume(): Aktywność staje się interaktywna i gotowa do użycia po zmianie orientacji
+
+
+Które pytanie wyświetli się:
+Do zasobów w aplikacji dla systemu Android odnosimy sie po nazwach. (2 pytanie)
+
+
+Czy pojawił się tam wpis dotyczący nowej
+aktywności?
+<activity android:name=".PromptActivity"
+          android:exported="false" />
+
